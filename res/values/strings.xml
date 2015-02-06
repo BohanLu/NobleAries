@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MiniBeaconSetting</string>
+    <string name="default_device">Choose type and device first...</string>
+    <string name="default_uuid">Company UUID</string>
+    <string name="default_major_id">Major ID</string>
+    <string name="default_minor_id">Minor ID</string>
+    <string name="default_measured_power">Measured Power</string>
+    <string name="default_led_control">LED switch</string>
+    <string name="default_advertising_interval">Advertising interval</string>
+    <string name="default_output_power">Output power</string>        
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="set">Set</string>
+    
+    <string name="uuid">XXXXXXXX-A295-A8AB-F734-031A98A512D (36 bytes)</string>    
+    <string name="id">0 ~ 65536 (2 bytes)</string>
+    <string name="measured_power">-100 ~ 0 (1 byte)</string>
+    <string name="advertising_interval">100 ~ 10000 on a incremental of 5ms unit (2 bytes)</string>
+    <string name="output_power">-23dBm -6dBm 0dBm 4dBm (1 byte)</string>  
+
+</resources>

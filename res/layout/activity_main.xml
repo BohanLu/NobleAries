@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <!-- Device Type -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">  
+            
+        <Spinner  
+            android:id="@+id/spnr_device_type"
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent" />
+         
+    </LinearLayout>   
+        
+    <!-- Connected Device -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">    
+    
+	    <TextView
+	        android:id="@+id/txvw_device_info"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="8"
+	        android:text="@string/default_device" />
+	    
+	    <ToggleButton
+	        android:id="@+id/tgbtn_connect"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:onClick="onClickTgBtnConnect"
+	        android:textOff="@string/connect"
+	        android:textOn="@string/disconnect" />
+    
+    </LinearLayout>
+    
+    <!-- UUID -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">  
+        
+        <EditText
+	        android:id="@+id/edtx_uuid"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="9"
+	        android:maxLength="36"
+	        android:text="@string/default_uuid"
+	        android:textSize="18sp" />
+        
+        <Button
+	        android:id="@+id/btn_set_uuid"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+            android:layout_weight="1"	         
+	        android:onClick="onClickBtnSetUuid"
+	        android:text="@string/set" />  
+    
+    </LinearLayout>  
+    
+    <!-- Major / Minor ID -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">  
+        
+        <EditText
+            android:id="@+id/edtx_major_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/default_major_id"/>
+        
+        <Button
+            android:id="@+id/btn_set_major_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"            
+            android:onClick="onClickBtnSetMajorId"
+            android:text="@string/set" />  
+            
+        <EditText
+            android:id="@+id/edtx_minor_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/default_minor_id"/>
+        
+        <Button
+            android:id="@+id/btn_set_minor_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"            
+            android:onClick="onClickBtnSetMinorId"
+            android:text="@string/set" />          
+    
+    </LinearLayout>     
+    
+    <!-- Measured power / LED control -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">  
+        
+        <EditText
+            android:id="@+id/edtx_measured_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/default_measured_power"/>
+        
+        <Button
+            android:id="@+id/btn_set_measured_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"            
+            android:onClick="onClickBtnSetMeasuredPower"
+            android:text="@string/set" />  
+            
+        <Spinner  
+            android:id="@+id/spnr_led"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="4" />
+        
+        <Button
+            android:id="@+id/btn_set_led"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"            
+            android:onClick="onClickBtnSetLed"
+            android:text="@string/set" />          
+    
+    </LinearLayout>      
+    
+    <!-- Advertising interval / Output power -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">  
+        
+        <EditText
+            android:id="@+id/edtx_adv_interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/default_advertising_interval"/>
+        
+        <Button
+            android:id="@+id/btn_set_adv_interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"            
+            android:onClick="onClickBtnSetAdvInterval"
+            android:text="@string/set" />  
+            
+        <Spinner  
+            android:id="@+id/spnr_output_power"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_weight="4" />
+        
+        <Button
+            android:id="@+id/btn_set_output_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"            
+            android:onClick="onClickBtnSetOutputPower"
+            android:text="@string/set" />          
+    
+    </LinearLayout>    
+    
+    <ListView
+        android:id="@+id/lsvw_devicelist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+ 
+
+</LinearLayout>
