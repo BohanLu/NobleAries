@@ -19,7 +19,7 @@ Dependency
 ==========
 
 1. H/W<br/>
-  Currently, RedBear Lab's BLE Mini beacon is the only hardware this app supports. But you might be able extend this app to support others.
+  Currently, RedBear Lab's BLE Mini beacon is the only hardware this app supports. But you might be able to extend this app to support others.
 
 2. Android<br/>
   Bluetooth Low Energy is supported after Android 4.3, which is at API level 18. Your mobile device must fill this requirement. 
@@ -31,7 +31,7 @@ Resources
 ==========
 
 1. RedBear Lab<br/>
-  http://redbearlab.squarespace.com/ibeacon/
+  http://redbearlab.squarespace.com/ibeacon/<br/>
   https://github.com/RedBearLab/BLEMini
 
 2. Apple iBeacon<br/>
