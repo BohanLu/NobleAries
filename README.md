@@ -13,7 +13,7 @@ This is an Android application for setting RedBear Lab's BLE Mini beacon. This m
 7. Output power
 8. Firmware version
 
-It also could modify these characteristics except for firmware version. Please refer to corresponding resources for the proper value of each characteristic. I tested this application successfully on Nexus 5 with Android 4.4.4 and 5.0.1. The firmware version of Mini beacon is "MiniBeacon_20131205". However, I think this application is not bug-free yet, and it is only a simple tool, so it might not be as good as you hope. :)
+It also could modify these characteristics except for firmware version. Please refer to corresponding resources for the proper value of each characteristic. I tested this application successfully on Nexus 5 with Android 4.4.4 and 5.0.1. The firmware version of Mini beacon is "MiniBeacon_20140121". However, I think this application is not bug-free yet, and it is only a simple tool, so it might not be as good as you hope. :)
 
 Dependency
 ==========
@@ -26,6 +26,16 @@ Dependency
 
 3. Building environment<br/>
   Ubuntu 14.04 x86_64 + eclipse Luna 4.4.1 + OpenJDK 1.7.0_75
+
+Test
+==========
+
+1. Mobile Phone<br/>
+  Google Nexus 5 with 4.4.4 and 5.0.1
+
+2. Firmware<br/>
+  MiniBeacon-20140409.bin (MiniBeacon_20140121)<br/>
+  https://github.com/RedBearLab/MiniBeacon/blob/master/Release/BLEMini/MiniBeacon-20140409.bin<br/>
 
 Resources
 ==========
